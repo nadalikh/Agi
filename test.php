@@ -3,6 +3,8 @@
 include "phpagi.php";
 $agi = new AGI();
 $agi->answer();
-$agi->exec("wait", "20");
+$agi->say_number("123");
+$agi->exec("wait","2");
+$agi->say_digits("123");
 $agi->verbose("***********herereee************");
 $agi->hangup();
