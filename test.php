@@ -7,5 +7,6 @@ $agi->exec("wait","15");
 $agi->answer();
 $agi->say_number("123");
 $agi->say_digits("123");
-$agi->verbose("***********herereee************");
+$res = exec("ls -l /var/spool/asterisk/voicemail/default/620/INBOX");
+$agi->verbose("***********$res************");
 $agi->hangup();
