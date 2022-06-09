@@ -6,8 +6,9 @@ $agi = new AGI();
 $agi->answer();
 $agi->say_number("123");
 $agi->say_digits("123");
-$res = exec("ls -l /var/spool/asterisk/voicemail/default/620/INBOX");
-$agi->verbose("***********$res************");
+$arr = array();
+$res = exec("ls -l /var/spool/asterisk/voicemail/default/620/INBOX",$arr);
+$agi->verbose("***********************\n \n $res \n \n **************************");
 $agi->exec("wait","2");
 
 $agi->hangup();
