@@ -25,7 +25,10 @@ $lastapp = $agi->get_variable("CDR(lastapp)")['data'];
 //$message .= "🛑 ended+at+:+".$end."%0A%0A";
 //$message .= "🛑 answered+at+:+".$answer."%0A%0A";
 //$message .= "🛑 last+app+at+:+".$answer."%0A%0A";
-$agi->verbose("**********************\n".$start."\n********************************\n");
+$agi->verbose("**********************\n".$end."\n********************************\n");
+$agi->verbose("**********************\n".$answer."\n********************************\n");
+$agi->verbose("**********************\n".$lastapp."\n********************************\n");
+$agi->verbose("**********************\n".$duration."\n********************************\n");
 $ch = curl_init();
 curl_setopt_array(
     $ch, array(
