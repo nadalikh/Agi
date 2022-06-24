@@ -11,14 +11,14 @@ $end = $agi->get_variable("CDR(end)")['data'];
 $answer = $agi->get_variable("CDR(answer)")['data'];
 $lastapp = $agi->get_variable("CDR(lastapp)")['data'];
 
-$message = "🛑+name+%3A+".$name."%0A%0A";
+$message = "name+%3A+".$name."%0A%0A";
 //$message .= "🛑 caller+id+:+".$src."%0A%0A";
 //$message .= "🛑 started at+:+".$start."%0A%0A";
 //$message .= "🛑 duration+:+".$duration."%0A%0A";
 //$message .= "🛑 ended+at+:+".$end."%0A%0A";
 //$message .= "🛑 answered+at+:+".$answer."%0A%0A";
 //$message .= "🛑 last+app+at+:+".$answer."%0A%0A";
-$agi->verbose("**********************\n".$message."********************************\n");
+$agi->verbose("**********************\n".$message."\n********************************\n");
 $ch = curl_init();
 curl_setopt_array(
     $ch, array(
