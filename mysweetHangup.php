@@ -22,7 +22,7 @@ $message .= "🛑 last+app+at+:+".$answer."%0A%0A";
 $ch = curl_init();
 curl_setopt_array(
     $ch, array(
-    CURLOPT_URL => 'https://nkhpro.ir:88/testcurl.php?chat_id=668578590&message=you+have+message+from+'.$message,
+    CURLOPT_URL => 'https://nkhpro.ir:88/testcurl.php?chat_id=668578590&message='."test",
     CURLOPT_RETURNTRANSFER => true
 ));
 $output = curl_exec($ch);
