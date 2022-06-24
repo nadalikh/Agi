@@ -11,7 +11,8 @@ $end = $agi->get_variable("CDR(end)")['data'];
 $answer = $agi->get_variable("CDR(answer)")['data'];
 $lastapp = $agi->get_variable("CDR(lastapp)")['data'];
 
-$message = "name+%3A+".$name."%0A%0A";
+//$message = "name+%3A+".$name."%0A%0A";
+$message = "%F0%9F%9B%91name%20%3A%20".$name."%0A%0A";
 //$message .= "🛑 caller+id+:+".$src."%0A%0A";
 //$message .= "🛑 started at+:+".$start."%0A%0A";
 //$message .= "🛑 duration+:+".$duration."%0A%0A";
