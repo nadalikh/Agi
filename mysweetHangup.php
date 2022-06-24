@@ -15,7 +15,7 @@ $answer = explode(" ",$agi->get_variable("CDR(answer)")['data']);
     $message .= "🛑+caller+id+:+$src,";
     $message .= "🛑+started+at+:+$start[0]$start[1],";
     $message .= "🛑+duration+:+$duration,";
-//    $message .= "🛑+ended+at+:+$end[0]$end[1],";
+    $message .= "🛑+ended+at+:+$end[0]$end[1],";
 //    $message .= "🛑+answered+at+:+$answer[0]$answer[1],";
 
 //$message .= "🛑 caller+id+:+".$src."%0A%0A";
