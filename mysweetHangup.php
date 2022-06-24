@@ -9,7 +9,6 @@ $duration = $agi->get_variable("CDR(duration)")['data'];
 $start = $agi->get_variable("CDR(start)")['data'];
 $end = $agi->get_variable("CDR(end)")['data'];
 $answer = $agi->get_variable("CDR(answer)")['data'];
-$lastapp = $agi->get_variable("CDR(lastapp)")['data'];
 
 //$message = "name+%3A+".$name."%0A%0A";
     $message = "🛑+name+:+$name,";
@@ -18,7 +17,7 @@ $lastapp = $agi->get_variable("CDR(lastapp)")['data'];
     $message .= "🛑+duration+:+$duration,";
     $message .= "🛑+ended+at+:+$end,";
     $message .= "🛑+answered+at+:+$answer,";
-    $message .= "🛑+last+app+at+:+$lastapp,";
+
 //$message .= "🛑 caller+id+:+".$src."%0A%0A";
 //$message .= "🛑 started at+:+".$start."%0A%0A";
 //$message .= "🛑 duration+:+".$duration."%0A%0A";
