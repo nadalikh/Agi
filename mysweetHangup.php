@@ -20,7 +20,7 @@ $s = $start[0]." ".$start[1];
 $db = new mysqli("localhost", "root","expecto-patronum1379","app");
 if($db->connect_error)
     die("connection faild to db: ". $db->connect_error);
-$db->query("insert into mysweet_cdr (name, callder_id, duration, started, ended, answered) VALUES ('$name', '$src', '$s', '$duration', '$end[0] $end[1]', '$answer[0] $answer[1]')");
+$db->query("insert into mysweet_cdr (name, callder_id, duration, started, ended, answered) VALUES ('$name', '$src','$duration', '$s', '$end[0] $end[1]', '$answer[0] $answer[1]')");
 
 $ch = curl_init();
 curl_setopt_array(
